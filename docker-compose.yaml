@@ -1,23 +1,23 @@
 version: '3.8'
 
 services:
-  # backend:
-  #   image: localhost/llm_backend:1.0.0
-  #   ports:
-  #     - "8000:8000"
-  #   container_name: llm_backend
-  #   privileged: true
-  #   # command: bash main.sh
-  #   build:
-  #     context: .
-  #     dockerfile: ./env/llm_backend/Dockerfile
-  #   volumes:
-  #     - .:/workspace:rw
-  #   environment:
-  #     - TZ=America/Sao_Paulo
-  #     - DISPLAY=$DISPLAY
-  #   networks:
-  #     - llm_network
+  backend:
+    image: localhost/llm_backend:1.0.0
+    ports:
+      - "8000:8000"
+    container_name: llm_backend
+    privileged: true
+    command: bash main.sh
+    build:
+      context: .
+      dockerfile: ./env/llm_backend/Dockerfile
+    volumes:
+      - .:/workspace:rw
+    environment:
+      - TZ=America/Sao_Paulo
+      - DISPLAY=$DISPLAY
+    networks:
+      - llm_network
 
   frontend:
     image: localhost/llm_frontend:1.0.0
@@ -25,7 +25,7 @@ services:
       - "32123:32123"
     container_name: llm_frontend
     privileged: true
-    # command: bash run_mesop.sh
+    command: bash run_mesop.sh
     build:
       context: .
       dockerfile: ./env/llm_frontend/Dockerfile

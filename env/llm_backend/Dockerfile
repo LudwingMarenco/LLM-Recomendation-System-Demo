@@ -9,6 +9,5 @@ RUN pip install --upgrade pip &&  pip install -r requirements.txt
 
 WORKDIR /workspace
 ADD . /workspace
-RUN chmod +x /workspace/main.sh
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+RUN chmod +x /workspace/main.sh

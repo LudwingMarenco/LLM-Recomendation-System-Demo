@@ -18,7 +18,7 @@ class RecommenderAPI:
             self.app = FastAPI(
                 title="LangChain Server",
                 version="1.0",
-                description="A simple API server using LangChain's Runnable interfaces",
+                description="A simple API server using LangChain",
             )
             self.llm_chain = load_model(config)
             self.setup_routes()
