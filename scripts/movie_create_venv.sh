@@ -22,6 +22,6 @@ else
     # pip3 install dvc[ssh]
     # pip install dvclive
     # pip3 install mlem
-    pip3 install -r requirements.txt
+    pip3 install --no-cache-dir -r requirements.txt
     
 fi

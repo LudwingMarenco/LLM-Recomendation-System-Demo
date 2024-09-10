@@ -13,7 +13,7 @@ class RecommenderAPI:
             cls._instance = super(RecommenderAPI, cls).__new__(cls)
         return cls._instance
 
-    def __init__(self, config: Dict, host: str = "0.0.0.0", port: int = 8000):
+    def __init__(self, config: Dict, host: str = "0.0.0.0", port: int = 8001):
         if not hasattr(self, 'initialized'):
             self.app = FastAPI(
                 title="LangChain Server",
@@ -30,10 +30,9 @@ class RecommenderAPI:
         async def chat_endpoint(chat_inputs: ChatInput):
             try:
                 responses = {}
-                # Define your variables
-                
+                print(chat_inputs.question)
                 responses["response"] = str(
-                    self.llm_chain.invoke({"question": chat_inputs.question, "subject": "books"})
+                    self.llm_chain.invoke({"question": chat_inputs.question})
                 ).lstrip()
             except Exception as e:
                 return {"error": str(e)}

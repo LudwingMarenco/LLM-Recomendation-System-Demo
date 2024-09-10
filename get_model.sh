@@ -7,9 +7,9 @@ then
     exit 1
 fi
 
-url="https://huggingface.co/TheBloke/phi-2-GGUF/resolve/main/phi-2.Q2_K.gguf"
+url="https://huggingface.co/TheBloke/phi-2-GGUF/resolve/main/phi-2.Q4_K_M.gguf"
 
-destination="models/phi-2.Q2_K.gguf"
+destination="models/phi-2.Q4_K_M.gguf"
 
 wget -O "$destination" "$url"
 
