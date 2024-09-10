@@ -20,6 +20,5 @@
 *.tr
 .vscode/*
 __pycache__/
-pdiaenv/
-models/
+models/*
 movieenv/
