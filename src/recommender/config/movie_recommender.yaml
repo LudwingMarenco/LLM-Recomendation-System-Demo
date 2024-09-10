@@ -1,0 +1,4 @@
+model_path: "./models/phi-2.Q2_K.gguf"
+temperature: 0
+max_tokens: 2000
+top_p: 1
