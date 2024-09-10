@@ -14,4 +14,4 @@ else
     exit 1
 fi
 
-python3 src/movie_recommender/movie_recommender_main.py --config_file src/movie_recommender/config/movie_recommender.yaml
+python3 src/recommender/movie_recommender_main.py --config_file src/recommender/config/movie_recommender.yaml

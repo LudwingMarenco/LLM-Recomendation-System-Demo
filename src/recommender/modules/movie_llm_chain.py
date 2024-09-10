@@ -4,9 +4,10 @@ from langchain_community.llms import LlamaCpp
 from langchain_core.prompts import PromptTemplate
 
 
-template = """Question: {question}
+template = """You are a movie recommender system that help users to find anime that match their preferences.
+Question: {question}
 
-Answer: Sure, here is a selection of movies."""
+Your response:"""
 
 # template = """You are a movie recommender system that help users to find anime that match their preferences.
 # Use the following pieces of context to answer the question at the end.
