@@ -2,13 +2,6 @@ from typing import Dict
 from langchain.schema.runnable import Runnable
 from langchain_community.llms import LlamaCpp
 from langchain_core.prompts import PromptTemplate
-from langchain.chains import LLMChain
-
-
-template = """You are a movie recommender system that help users to find movie that match their preferences.
-Question: {question}
-
-Your response:"""
 
 
 def load_model(config: Dict) -> Runnable:
@@ -20,7 +13,11 @@ def load_model(config: Dict) -> Runnable:
         top_p=config["top_p"],
         verbose=False,
     )
-    prompt = PromptTemplate.from_template(template)
+    template = """You are a {subject} recommender system that help users to find the best {subject} that match their preferences.
+                Question: {question}
 
+                Your response:"""
+    prompt = PromptTemplate.from_template(template)
+    
 
     return prompt | llm_model

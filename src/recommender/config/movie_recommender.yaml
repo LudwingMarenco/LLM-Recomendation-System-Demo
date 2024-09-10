@@ -3,9 +3,3 @@ temperature: 0
 max_tokens: 2000
 top_p: 1
 subject: "movies"
-preferred_genres: "Sci-Fi, Action"
-favorite_examples: "Blade Runner, Inception"
-specific_interests: "Futuristic technology, complex plots"
-avoid_list: "Romantic comedies, historical dramas"
-current_mood: "Relaxing at home"
-other_details: "Prefer movies with strong visual effects"

@@ -2,13 +2,13 @@
 
 ## Overview
 
-This repository contains python implementation which OpenCV framework for detecting and recognizing faces using models from model zoo.
+This repository provides a Python implementation of an LLM-based recommendation system using the LangChain pipeline. While the current pipeline is designed to recommend movies, it can be easily extended to other domains such as books.
 
 ## Features
 
-- **Multiple Face Detection**: Capable of detecting multiple faces simultaneously.
-- **Constrained Face Recognition**: Recognition process is limited to using a single photo per person.
-- **Real-time Face Database Update**: Ability to update the face database in real-time. New face photos can be added, and the module updates dynamically while running.
+- **Local LLM Deployment**: Run a lightweight LLM model locally.
+- **API Integration**: Test the LLM recommendation system in real-time with API integration.
+- **UI Interface Mesop Based**: Rapid deployment of a UI interface for direct interaction with the prompt engineering tasks.
 
 ## How to use it?
 
@@ -26,13 +26,13 @@ This repository contains python implementation which OpenCV framework for detect
      source scripts/movie_activate_venv.sh
     ```
 
-3. **Run the LLM Recomendation System Demo**: Execute the following command within your virtual environment to start the LLM Recomendation System Demo:
+3. **Run the LLM Recomendation System Demo**: Start the LLM Recommendation System Demo by executing:
 
     ```bash
     ./main.sh
     ```
 
-4. **Run Mesop UI based interface**: Execute the following command within your virtual environment in another terminal to deploy UI interfce for direclty interact with the LLM Recomendation System Demo
+4. **Run Mesop UI based interface**: In a separate terminal, deploy the UI interface for direct interaction with the LLM Recommendation System Demo by running:
 
     ```bash
     ./run_mesop.sh

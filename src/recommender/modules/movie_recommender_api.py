@@ -30,8 +30,10 @@ class RecommenderAPI:
         async def chat_endpoint(chat_inputs: ChatInput):
             try:
                 responses = {}
+                # Define your variables
+                
                 responses["response"] = str(
-                    self.llm_chain.invoke({"question": chat_inputs.question})
+                    self.llm_chain.invoke({"question": chat_inputs.question, "subject": "books"})
                 ).lstrip()
             except Exception as e:
                 return {"error": str(e)}
