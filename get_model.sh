@@ -6,6 +6,7 @@ then
     echo "wget could not be found, please install it first."
     exit 1
 fi
+mkdir -p models
 
 url="https://huggingface.co/TheBloke/phi-2-GGUF/resolve/main/phi-2.Q2_K.gguf"
 
