@@ -23,5 +23,5 @@ def page():
 def transform(input: str, history: list[mel.ChatMessage]):
     responses = send_chat_request(input)
     for line in responses["response"]:
-        time.sleep(0.05)
+        time.sleep(0.03)
         yield line
