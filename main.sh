@@ -1,6 +1,7 @@
 #!/bin/bash
 
 model_folder="models"
+mkdir -p $model_folder
 
 if [ -d "$model_folder" ]; then
     if ls "$model_folder"/*.gguf 1> /dev/null 2>&1; then
