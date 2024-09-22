@@ -32,11 +32,13 @@ This repository provides a Python implementation of an LLM-based recommendation 
     ./main.sh
     ```
 
-4. **Run Mesop UI based interface**: In a separate terminal, deploy the UI interface for direct interaction with the LLM Recommendation System Demo by running:
+4. **Run Mesop UI based interface**: In a separate terminal, deploy the UI interface for direct interaction with the LLM Recommendation System Demo by executing the following command:
 
     ```bash
     ./run_mesop.sh
     ```
+
+Next, open the provided link in your web browser to engage directly with the LLM.
 
 ### Running in container
 
