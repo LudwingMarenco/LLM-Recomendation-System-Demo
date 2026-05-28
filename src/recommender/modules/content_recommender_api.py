@@ -1,6 +1,6 @@
 from typing import Dict
 from fastapi import FastAPI
-from modules.movie_llm_chain import load_model
+from modules.content_llm_chain import load_model
 from pydantic import BaseModel
 import uvicorn
 

@@ -1,7 +1,7 @@
 import mesop as me
 import mesop.labs as mel
 import time
-from modules.movie_post_api import send_chat_request
+from modules.content_post_api import send_chat_request
 
 
 def on_load(e: me.LoadEvent):

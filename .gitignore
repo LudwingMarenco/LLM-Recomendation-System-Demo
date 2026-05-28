@@ -21,4 +21,4 @@
 .vscode/*
 __pycache__/
 models/*
-movieenv/
+contentenv/

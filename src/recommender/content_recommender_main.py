@@ -1,6 +1,6 @@
 import argparse
-from modules.movie_recommender_api import RecommenderAPI
-from utils.movie_utils import get_config
+from modules.content_recommender_api import RecommenderAPI
+from utils.content_utils import get_config
 
 if __name__ == "__main__":
     # Create an argument parser

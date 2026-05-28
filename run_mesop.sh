@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mesop src/visualization/movie_visua_main.py
+mesop src/visualization/content_visua_main.py
