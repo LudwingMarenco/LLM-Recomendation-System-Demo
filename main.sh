@@ -1,17 +1,19 @@
 #!/bin/bash
 
-model_folder="models"
-mkdir -p $model_folder
+# model_folder="models"
+# mkdir -p $model_folder
 
-if [ -d "$model_folder" ]; then
-    if ls "$model_folder"/*.gguf 1> /dev/null 2>&1; then
-        echo "Model already exist in the $model_folder."
-    else
-        ./get_model.sh
-    fi
-else
-    echo "model_folder $model_folder does not exist."
-    exit 1
-fi
+# if [ -d "$model_folder" ]; then
+#     if ls "$model_folder"/*.gguf 1> /dev/null 2>&1; then
+#         echo "Model already exist in the $model_folder."
+#     else
+#         ./get_model.sh
+#     fi
+# else
+#     echo "model_folder $model_folder does not exist."
+#     exit 1
+# fi
 
-python3 src/recommender/content_recommender_main.py --config_file src/recommender/config/content_recommender.yaml
+# python3 src/recommender/content_recommender_main.py --config_file src/recommender/config/content_recommender.yaml
+
+uv run python -m src.ingestion.content_ingestion_main --config_file src/ingestion/config/content_ingestion_params.yaml

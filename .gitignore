@@ -20,5 +20,13 @@
 *.tr
 .vscode/*
 __pycache__/
+dataset/*
+!dataset/
+notebooks/
 models/*
+!models/
+*.env
+commit.txt
+log/
+*.flag
 contentenv/

@@ -1,6 +1,5 @@
 import argparse
-from modules.content_recommender_api import RecommenderAPI
-from utils.content_utils import get_config
+from src.utils.content_utils import get_config
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -10,6 +9,5 @@ if __name__ == "__main__":
     
     config = get_config(args.config)
 
-    # Run LLM API
-    recommender_api = RecommenderAPI(config)
-    recommender_api.run()
+    print(config)
+    print("ok")

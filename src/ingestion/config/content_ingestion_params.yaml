@@ -1,0 +1,6 @@
+ingested_content:
+  http:
+    base_url: "https://ai-2027.com"
+  pdf:
+    - id: "arxiv_2503_14499"
+    - id: "arxiv_2412_06769"
